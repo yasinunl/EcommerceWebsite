@@ -1,0 +1,36 @@
+﻿.left-menu{
+    margin-top:20px;
+}
+.left-menu-h{
+    font-family:"Open Sans" sans-serif;
+    font-size:25px;
+    font-weight:500;
+    margin-bottom:20px
+}
+.left-menu-links {
+    width: 80%;
+}
+    .left-menu-links li {
+        border-bottom: 1px solid #dee2e6 !important;
+        
+    }
+    .left-menu-links a {
+        display: block;
+        font-size: 15px;
+        font-weight: 600;
+        color: #262626;
+        height: 40px;
+        padding-top:7.5px;
+    }
+.left-menu-arrow{
+    float:right;
+    margin-top:5px
+}
+.left-menu-links a:hover {
+    color: #384aeb
+}
+.left-menu-links-icon{
+    width:16px;
+    font-size:16px;
+    margin-right:8%
+}

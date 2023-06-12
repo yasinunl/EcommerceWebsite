@@ -1,0 +1,19 @@
+﻿.product-item{
+    position:absolute;
+}
+.fa-chevron-left{
+   margin-left:-65px !important
+}
+.fa-chevron-right {
+    margin-right: -65px !important
+}
+.product-item::after {
+    border: solid 0px #fff !important;
+}
+
+.product-image {
+    border-top-right-radius: 15% !important;
+    border-top-left-radius: 15% !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}

@@ -1,0 +1,1026 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Anasayfa</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/categories_styles.css">
+    <link rel="stylesheet" href="css/core-style.css">
+
+    <link href="assets/pages/css/components.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet" />
+    <style>
+        .card-body {
+            height: 100px;
+            width: 100px
+        }
+
+        .carousel-multi-item {
+            padding: 0 30px !important;
+            margin: 0 -15px !important;
+        }
+
+        .DetailControl {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0) !important;
+            margin-top: 27px !important;
+        }
+
+            .DetailControl:first-child {
+                margin-left: -33px
+            }
+
+            .DetailControl:last-child {
+                position: absolute;
+                margin-right: -30px
+            }
+
+        #imgOpen {
+            width: 350px;
+            height: 350px;
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0) !important;
+            border: none !important
+        }
+
+        .carousel-Detail {
+            margin-top: -25px !important;
+        }
+
+        .card-body {
+        }
+
+        .carousel .carousel-item img {
+            margin: 0 0 2px 2px !important;
+        }
+        .breadcrumbs {
+            z-index: 15;
+        }
+    </style>
+    <!--
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    -->
+    <!-- Urunler -->
+    <!-- Responsive CSS -->
+    <!--
+    <link href="css/responsive.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/NewStyle.css">
+    <style>
+
+
+        #quickview {
+            background-color: rgba(0, 0, 0, .5);
+        }
+    </style>
+</head>
+<body>
+    <div class="ustMenu">
+        <div class="catagories-side-menu">
+            <!-- Close Icon -->
+            <div id="sideMenuClose">
+                <i class="ti-close"></i>
+            </div>
+            <!--  Side Nav  -->
+            <div class="nav-side-menu">
+                <div class="menu-list">
+                    <h6>Categories</h6>
+                    <ul id="menu-content" class="menu-content collapse out">
+                        <!-- Single Item -->
+                        <li data-toggle="collapse" data-target="#women" class="collapsed active">
+                            <a href="#">Woman wear <span class="arrow"></span></a>
+                            <ul class="sub-menu collapse" id="women">
+                                <li><a href="#">Midi Dresses</a></li>
+                                <li><a href="#">Maxi Dresses</a></li>
+                                <li><a href="#">Prom Dresses</a></li>
+                                <li><a href="#">Little Black Dresses</a></li>
+                                <li><a href="#">Mini Dresses</a></li>
+                            </ul>
+                        </li>
+                        <!-- Single Item -->
+                        <li data-toggle="collapse" data-target="#man" class="collapsed">
+                            <a href="#">Man Wear <span class="arrow"></span></a>
+                            <ul class="sub-menu collapse" id="man">
+                                <li><a href="#">Man Dresses</a></li>
+                                <li><a href="#">Man Black Dresses</a></li>
+                                <li><a href="#">Man Mini Dresses</a></li>
+                            </ul>
+                        </li>
+                        <!-- Single Item -->
+                        <li data-toggle="collapse" data-target="#kids" class="collapsed">
+                            <a href="#">Children <span class="arrow"></span></a>
+                            <ul class="sub-menu collapse" id="kids">
+                                <li><a href="#">Children Dresses</a></li>
+                                <li><a href="#">Mini Dresses</a></li>
+                            </ul>
+                        </li>
+                        <!-- Single Item -->
+                        <li data-toggle="collapse" data-target="#bags" class="collapsed">
+                            <a href="#">Bags &amp; Purses <span class="arrow"></span></a>
+                            <ul class="sub-menu collapse" id="bags">
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Purses</a></li>
+                            </ul>
+                        </li>
+                        <!-- Single Item -->
+                        <li data-toggle="collapse" data-target="#eyewear" class="collapsed">
+                            <a href="#">Eyewear <span class="arrow"></span></a>
+                            <ul class="sub-menu collapse" id="eyewear">
+                                <li><a href="#">Eyewear Style 1</a></li>
+                                <li><a href="#">Eyewear Style 2</a></li>
+                                <li><a href="#">Eyewear Style 3</a></li>
+                            </ul>
+                        </li>
+                        <!-- Single Item -->
+                        <li data-toggle="collapse" data-target="#footwear" class="collapsed">
+                            <a href="#">Footwear <span class="arrow"></span></a>
+                            <ul class="sub-menu collapse" id="footwear">
+                                <li><a href="#">Footwear 1</a></li>
+                                <li><a href="#">Footwear 2</a></li>
+                                <li><a href="#">Footwear 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="wrapper">
+
+            <!-- ****** Header Area Start ****** -->
+            <header class="header_area">
+                <!-- Top Header Area Start -->
+                <div class="top_header_area">
+                    <div class="container h-100">
+                        <div class="row h-50 align-items-center justify-content-end">
+
+                            <div class="col-12 ">
+                                <div class="top_single_area d-flex align-items-center">
+                                    <!-- Logo Area -->
+                                    <div class="left_logo">
+                                        <a href="#"><img src="img/core-img/logo.png" alt="" align="left"></a>
+                                    </div>
+                                    <div class="hero__search__form">
+                                        <form action="#">
+                                            <input type="text" placeholder="Ürün, kategori veya marka">
+                                            <button type="submit" class="site-btn">ARA</button>
+                                        </form>
+                                    </div>
+                                    <!-- Cart & Menu Area -->
+                                    <div class="header-cart-menu d-flex align-items-center ml-auto">
+                                        <!-- Cart Area -->
+                                        <div class="cart">
+                                            <a href="#" id="header-cart-btn" target="_blank"><span class="cart_quantity">2</span> <i class="ti-bag"></i> Your Bag $20</a>
+                                            <!-- Cart List Area Start -->
+                                            <ul class="cart-list">
+                                                <li>
+                                                    <a href="#" class="image"><img src="img/product-img/product-10.jpg" class="cart-thumb" alt=""></a>
+                                                    <div class="cart-item-desc">
+                                                        <h6><a href="#">Women's Fashion</a></h6>
+                                                        <p>1x - <span class="price">$10</span></p>
+                                                    </div>
+                                                    <span class="dropdown-product-remove"><i class="icon-cross"></i></span>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="image"><img src="img/product-img/product-11.jpg" class="cart-thumb" alt=""></a>
+                                                    <div class="cart-item-desc">
+                                                        <h6><a href="#">Women's Fashion</a></h6>
+                                                        <p>1x - <span class="price">$10</span></p>
+                                                    </div>
+                                                    <span class="dropdown-product-remove"><i class="icon-cross"></i></span>
+                                                </li>
+                                                <li class="total">
+                                                    <span class="pull-right">Total: $20.00</span>
+                                                    <a href="cart.html" class="btn btn-sm btn-cart">Cart</a>
+                                                    <a href="checkout-1.html" class="btn btn-sm btn-checkout">Checkout</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="header-right-side-menu ml-15">
+                                            <a href="#" id="sideMenuBtn"><i class="ti-menu" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <!-- ****** Header Area End ****** -->
+            <!-- ****** Top Discount Area Start ****** -->
+            <div class="cat-Main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col product_section clearfix">
+
+                            <!-- Breadcrumbs -->
+
+                            <div class="breadcrumbs d-flex flex-row align-items-center">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Men's</a></li>
+                                    <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Men's</a></li>
+                                    <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Men's</a></li>
+                                    <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Men's</a></li>
+                                    <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Men's</a></li>
+                                    <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Men's</a></li>
+                                    <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Men's</a></li>
+                                    <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Men's</a></li>
+                                    <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Men's</a></li>
+                                    <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Men's</a></li>
+                                    <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Men's</a></li>
+                                    <li class="active"><a href="index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Men's</a></li>
+
+                                </ul>
+                            </div>
+
+                            <!-- Sidebar -->
+                            <div class="sidebar">
+                                <div class="sidebar_section">
+                                    <div class="sidebar_title">
+                                        <h5>Product Category</h5>
+                                    </div>
+                                    <ul class="sidebar_categories">
+                                        <li class="active"><a href="#"><span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>Women</a></li>
+
+                                        <li><a href="#">Men</a></li>
+                                        <li><a href="#">Accessories</a></li>
+                                        <li><a href="#">New Arrivals</a></li>
+                                        <li><a href="#">Collection</a></li>
+                                        <li><a href="#">Shop</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Price Range Filtering -->
+                                <div class="sidebar_section">
+                                    <div class="sidebar_title">
+                                        <h5>Filter by Price</h5>
+                                    </div>
+                                    <p>
+                                        <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                    </p>
+                                    <div id="slider-range"></div>
+                                    <div class="filter_button"><span>filter</span></div>
+                                </div>
+
+                                <!-- Sizes -->
+                                <div class="sidebar_section">
+                                    <div class="sidebar_title">
+                                        <h5>Sizes</h5>
+                                    </div>
+                                    <ul class="checkboxes">
+                                        <li><i class="fa fa-square-o" aria-hidden="true"></i><span>S</span></li>
+                                        <li class="active"><i class="fa fa-square" aria-hidden="true"></i><span>M</span></li>
+                                        <li><i class="fa fa-square-o" aria-hidden="true"></i><span>L</span></li>
+                                        <li><i class="fa fa-square-o" aria-hidden="true"></i><span>XL</span></li>
+                                        <li><i class="fa fa-square-o" aria-hidden="true"></i><span>XXL</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Color -->
+                                <div class="sidebar_section">
+                                    <div class="sidebar_title">
+                                        <h5>Color</h5>
+                                    </div>
+                                    <ul class="checkboxes">
+                                        <li><i class="fa fa-square-o" aria-hidden="true"></i><span>Black</span></li>
+                                        <li class="active"><i class="fa fa-square" aria-hidden="true"></i><span>Pink</span></li>
+                                        <li><i class="fa fa-square-o" aria-hidden="true"></i><span>White</span></li>
+                                        <li><i class="fa fa-square-o" aria-hidden="true"></i><span>Blue</span></li>
+                                        <li><i class="fa fa-square-o" aria-hidden="true"></i><span>Orange</span></li>
+                                        <li><i class="fa fa-square-o" aria-hidden="true"></i><span>White</span></li>
+                                        <li><i class="fa fa-square-o" aria-hidden="true"></i><span>Blue</span></li>
+                                        <li><i class="fa fa-square-o" aria-hidden="true"></i><span>Orange</span></li>
+                                        <li><i class="fa fa-square-o" aria-hidden="true"></i><span>White</span></li>
+                                        <li><i class="fa fa-square-o" aria-hidden="true"></i><span>Blue</span></li>
+                                        <li><i class="fa fa-square-o" aria-hidden="true"></i><span>Orange</span></li>
+                                    </ul>
+                                    <div class="show_more">
+                                        <span><span>+</span>Show More</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Main Content -->
+                            <div class="main_content" style="width:81%; margin-left:5px">
+
+                                <!-- Products -->
+
+                                <div class="products_iso">
+                                    <div class="row">
+                                        <div class="col">
+
+                                            <!-- Product Sorting -->
+
+                                            <div class="product_sorting_container product_sorting_container_top pages d-flex flex-row align-items-center">
+                                                <ul class="product_sorting">
+                                                    <li>
+                                                        <span class="type_sorting_text">Default Sorting</span>
+                                                        <i class="fa fa-angle-down"></i>
+                                                        <ul class="sorting_type">
+                                                            <li class="type_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>Default Sorting</span></li>
+                                                            <li class="type_sorting_btn" data-isotope-option='{ "sortBy": "price" }'><span>Price</span></li>
+                                                            <li class="type_sorting_btn" data-isotope-option='{ "sortBy": "name" }'><span>Product Name</span></li>
+                                                        </ul>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                            <!-- Product Grid -->
+
+                                            <div class="product-grid">
+
+                                                <!-- Product 1 -->
+
+                                                <div class="product-item accessories">
+                                                    <div class="product product_filter">
+                                                        <div class="product-img">
+                                                            <img class="product-image" src="img/product-img/product-1.jpg" style="" alt="">
+                                                            <div class="product-quicview">
+                                                                <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>-$120</span></div>
+                                                        <div class="favorite favorite_left"></div>
+                                                        <div class="product_info">
+                                                            <div class="product-detail">
+                                                                <div class="product-description">
+                                                                    <h4 class="product-price product_price">$39.90</h4>
+                                                                    <p>Jeans midi cocktail dress</p>
+                                                                    <!-- Add to Cart -->
+                                                                    <div class="add-to-cart">
+                                                                        <a href="#" class="add-to-cart-btn">ADD TO CART</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Product 2 -->
+
+                                                <div class="product-item women">
+                                                    <div class="product product_filter">
+                                                        <div class="product_image">
+                                                            <div class="product-img">
+                                                                <img class="product-image" src="img/product-img/product-1.jpg" alt="">
+                                                                <div class="product-quicview">
+                                                                    <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="favorite"></div>
+                                                        <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>new</span></div>
+
+                                                        <div class="product_info">
+                                                            <div class="thumb-content">
+                                                                <h4>Apple iPad</h4>
+                                                                <p class="item-price"><strike style="color:grey; font-size:12px;margin-top:-20px; vertical-align:central">$400.00</strike> <span class="product_price" style="font-weight:bold; color:yellowgreen">$369.00</span></p>
+                                                                <div class="star-rating">
+                                                                    <ul class="list-inline">
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div><div class="btnAdd">
+                                                                    <a href="#" class="AddBtn">Add to Cart</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Product 3 -->
+
+                                                <div class="product-item women">
+                                                    <div class="product product_filter">
+                                                        <div class="product_image">
+                                                            <div class="product-img">
+                                                                <img class="product-image" src="img/product-img/product-1.jpg" alt="">
+                                                                <div class="product-quicview">
+                                                                    <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="favorite" style="z-index:1200"></div>
+                                                        <div class="product_info">
+                                                            <div class="thumb-content">
+                                                                <h4>Apple iPad</h4>
+                                                                <p class="item-price"><strike style="color:grey; font-size:12px;margin-top:-20px; vertical-align:central">$400.00</strike> <span class="product_price" style="font-weight:bold; color:yellowgreen">$369.00</span></p>
+                                                                <div class="star-rating">
+                                                                    <ul class="list-inline">
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div><div class="btnAdd">
+                                                                    <a href="#" class="AddBtn">Add to Cart</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Product 4 -->
+
+                                                <div class="product-item accessories">
+                                                    <div class="product product_filter">
+                                                        <div class="product-img">
+                                                            <img class="product-image" src="img/product-img/product-1.jpg" alt="">
+                                                            <div class="product-quicview">
+                                                                <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
+
+                                                        <div class="product_info">
+                                                            <div class="product-detail">
+                                                                <div class="product-description">
+                                                                    <h4 class="product-price product_price">$39.90</h4>
+                                                                    <p>Jeans midi cocktail dress</p>
+                                                                    <!-- Add to Cart -->
+                                                                    <div class="add-to-cart">
+                                                                        <a href="#" class="add-to-cart-btn">ADD TO CART</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Product 5 -->
+
+                                                <div class="product-item accessories">
+                                                    <div class="product product_filter">
+                                                        <div class="product-img">
+                                                            <img class="product-image" src="img/product-img/product-1.jpg" alt="">
+                                                            <div class="product-quicview">
+                                                                <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
+
+                                                        <div class="product_info">
+                                                            <div class="product-detail">
+                                                                <div class="product-description">
+                                                                    <h4 class="product-price product_price">$39.90</h4>
+                                                                    <p>Jeans midi cocktail dress</p>
+                                                                    <!-- Add to Cart -->
+                                                                    <div class="add-to-cart">
+                                                                        <a href="#" class="add-to-cart-btn">ADD TO CART</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Product 6 -->
+
+                                                <div class="product-item women">
+                                                    <div class="product product_filter">
+                                                        <div class="product_image">
+                                                            <div class="product-img">
+                                                                <img class="product-image" src="img/product-img/product-1.jpg" alt="">
+                                                                <div class="product-quicview">
+                                                                    <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="favorite" style="z-index:1200"></div>
+                                                        <div class="product_info">
+                                                            <div class="thumb-content">
+                                                                <h4>Apple iPad</h4>
+                                                                <p class="item-price"><strike style="color:grey; font-size:12px;margin-top:-20px; vertical-align:central">$400.00</strike> <span class="product_price" style="font-weight:bold; color:yellowgreen">$369.00</span></p>
+                                                                <div class="star-rating">
+                                                                    <ul class="list-inline">
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div><div class="btnAdd">
+                                                                    <a href="#" class="AddBtn">Add to Cart</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Product 7 -->
+
+                                                <div class="product-item accessories">
+                                                    <div class="product product_filter">
+                                                        <div class="product-img">
+                                                            <img class="product-image" src="img/product-img/product-1.jpg" alt="">
+                                                            <div class="product-quicview">
+                                                                <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
+
+                                                        <div class="product_info">
+                                                            <div class="product-detail">
+                                                                <div class="product-description">
+                                                                    <h4 class="product-price product_price">$39.90</h4>
+                                                                    <p>Jeans midi cocktail dress</p>
+                                                                    <!-- Add to Cart -->
+                                                                    <div class="add-to-cart">
+                                                                        <a href="#" class="add-to-cart-btn">ADD TO CART</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Product 8 -->
+
+                                                <div class="product-item women">
+                                                    <div class="product product_filter">
+                                                        <div class="product_image">
+                                                            <div class="product-img">
+                                                                <img class="product-image" src="img/product-img/product-1.jpg" alt="">
+                                                                <div class="product-quicview">
+                                                                    <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="favorite" style="z-index:1200"></div>
+                                                        <div class="product_info">
+                                                            <div class="thumb-content">
+                                                                <h4>Apple iPad</h4>
+                                                                <p class="item-price"><strike style="color:grey; font-size:12px;margin-top:-20px; vertical-align:central">$400.00</strike> <span class="product_price" style="font-weight:bold; color:yellowgreen">$369.00</span></p>
+                                                                <div class="star-rating">
+                                                                    <ul class="list-inline">
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div><div class="btnAdd">
+                                                                    <a href="#" class="AddBtn">Add to Cart</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Product 9 -->
+
+                                                <div class="product-item accessories">
+                                                    <div class="product product_filter">
+                                                        <div class="product-img">
+                                                            <img class="product-image" src="img/product-img/product-1.jpg" alt="">
+                                                            <div class="product-quicview">
+                                                                <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
+
+                                                        <div class="product_info">
+                                                            <div class="product-detail">
+                                                                <div class="product-description">
+                                                                    <h4 class="product-price product_price">$39.90</h4>
+                                                                    <p>Jeans midi cocktail dress</p>
+                                                                    <!-- Add to Cart -->
+                                                                    <div class="add-to-cart">
+                                                                        <a href="#" class="add-to-cart-btn">ADD TO CART</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Product 10 -->
+
+                                                <div class="product-item women">
+                                                    <div class="product product_filter">
+                                                        <div class="product_image">
+                                                            <div class="product-img">
+                                                                <img class="product-image" src="img/product-img/product-1.jpg" alt="">
+                                                                <div class="product-quicview">
+                                                                    <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="favorite" style="z-index:1200"></div>
+                                                        <div class="product_info">
+                                                            <div class="thumb-content">
+                                                                <h4>Apple iPad</h4>
+                                                                <p class="item-price"><strike style="color:grey; font-size:12px;margin-top:-20px; vertical-align:central">$400.00</strike> <span class="product_price" style="font-weight:bold; color:yellowgreen">$369.00</span></p>
+                                                                <div class="star-rating">
+                                                                    <ul class="list-inline">
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div><div class="btnAdd">
+                                                                    <a href="#" class="AddBtn">Add to Cart</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Product 11 -->
+
+                                                <div class="product-item accessories">
+                                                    <div class="product product_filter">
+                                                        <div class="product-img">
+                                                            <img class="product-image" src="img/product-img/product-1.jpg" alt="">
+                                                            <div class="product-quicview">
+                                                                <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>sale</span></div>
+
+                                                        <div class="product_info">
+                                                            <div class="product-detail">
+                                                                <div class="product-description">
+                                                                    <h4 class="product-price product_price">$39.90</h4>
+                                                                    <p>Jeans midi cocktail dress</p>
+                                                                    <!-- Add to Cart -->
+                                                                    <div class="add-to-cart">
+                                                                        <a href="#" class="add-to-cart-btn">ADD TO CART</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Product 12 -->
+
+                                                <div class="product-item women">
+                                                    <div class="product product_filter">
+                                                        <div class="product_image">
+                                                            <div class="product-img">
+                                                                <img class="product-image" src="img/product-img/product-1.jpg" alt="">
+                                                                <div class="product-quicview">
+                                                                    <a href="#" data-toggle="modal" data-target="#quickview"><i class="ti-plus"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="favorite"></div>
+                                                        <div class="product_info">
+                                                            <div class="thumb-content">
+                                                                <h4>Apple iPad</h4>
+                                                                <p class="item-price"><strike style="color:grey; font-size:12px;margin-top:-20px; vertical-align:central">$400.00</strike> <span class="product_price" style="font-weight:bold; color:yellowgreen">$369.00</span></p>
+                                                                <div class="star-rating">
+                                                                    <ul class="list-inline">
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                                    </ul>
+                                                                </div><div class="btnAdd">
+                                                                    <a href="#" class="AddBtn">Add to Cart</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Product Sorting -->
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+
+            <div class="modal fade" id="quickview" tabindex="-1" role="dialog" aria-labelledby="quickview" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <button type="button" class="close btn" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+
+                        <div class="modal-body">
+                            <div class="quickview_body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-6 ">
+                                            <div class="product-main-image">
+                                                <img src="img/bg-img/1.jpg" alt="Cool green dress with red bell" class="img-responsive" id="imgOpen">
+                                            </div>
+                                            <div class="product-other-images">
+                                                <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+                                                    <div class="carousel-Detail">
+                                                        <!--Controls-->
+                                                        <div class="controls-top">
+                                                            <a class="carousel-control-prev DetailControl" style="height:65px" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                                                            <a class="carousel-control-next DetailControl" style="height:65px" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                                                        </div>
+                                                        <!--/.Controls-->
+                                                        <!--Indicators-->
+                                                        <!--/.Indicators-->
+                                                        <!--Slides-->
+                                                        <div class="carousel-inner" role="listbox">
+
+                                                            <!--First slide-->
+                                                            <div class="carousel-item active">
+
+                                                                <div class="row RowDetail">
+                                                                    <div class="col-md-4">
+                                                                        <div class="card ">
+                                                                            <div class="card-body">
+                                                                                <a href="javascript:;" class="ActiveFoto active" onclick="fotOpen('img/bg-img/1.jpg',1)"><img alt="Berry Lace Dress" src="img/bg-img/1.jpg"></a>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-4 ">
+                                                                        <div class="card">
+                                                                            <div class="card-body">
+                                                                                <a href="javascript:;" class="ActiveFoto" onclick="fotOpen('img/bg-img/2.jpg' ,2 )"><img alt="Berry Lace Dress" src="img/bg-img/2.jpg"></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-4">
+                                                                        <div class="card">
+                                                                            <div class="card-body">
+                                                                                <a href="javascript:;" class="ActiveFoto" onclick="fotOpen('img/bg-img/3.jpg',3)"><img alt="Berry Lace Dress" src="img/bg-img/3.jpg"></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <!--/.First slide-->
+                                                            <!--Second slide-->
+                                                            <div class="carousel-item">
+
+                                                                <div class="row RowDetail">
+                                                                    <div class="col-md-4">
+                                                                        <div class="card ">
+                                                                            <div class="card-body">
+                                                                                <a href="javascript:;"><img alt="Berry Lace Dress" src="img/bg-img/4.jpg"></a>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-4 ">
+                                                                        <div class="card">
+                                                                            <div class="card-body">
+                                                                                <a href="javascript:;"><img alt="Berry Lace Dress" src="img/bg-img/5.jpg"></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-4">
+                                                                        <div class="card">
+                                                                            <div class="card-body">
+                                                                                <a href="javascript:;"><img alt="Berry Lace Dress" src="img/bg-img/6.jpg"></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <!--/.Second slide-->
+                                                            <!--Third slide-->
+                                                            <div class="carousel-item">
+
+                                                                <div class="row RowDetail">
+                                                                    <div class="col-md-4">
+                                                                        <div class="card ">
+                                                                            <div class="card-body">
+                                                                                <a href="javascript:;"><img alt="Berry Lace Dress" src="img/bg-img/7.jpg"></a>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-4 ">
+                                                                        <div class="card">
+                                                                            <div class="card-body">
+                                                                                <a href="javascript:;"><img alt="Berry Lace Dress" src="img/bg-img/8.jpg"></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-4">
+                                                                        <div class="card">
+                                                                            <div class="card-body">
+                                                                                <a href="javascript:;"><img alt="Berry Lace Dress" src="img/bg-img/9.jpg"></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <!--/.Third slide-->
+
+                                                        </div>
+                                                        <!--/.Slides-->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="quickview_pro_des">
+                                                <h4 class="title">Boutique Silk Dress</h4>
+                                                <div class="top_seller_product_rating mb-15">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <h5 class="price">$120.99 <span>$130</span></h5>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia expedita quibusdam aspernatur, sapiente consectetur accusantium perspiciatis praesentium eligendi, in fugiat?</p>
+                                                <a href="#">View Full Product Details</a>
+                                            </div>
+                                            <!-- Add to Cart Form -->
+                                            <form class="cart" method="post">
+                                                <div class="quantity">
+                                                    <span class="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;"><i class="fa fa-minus" aria-hidden="true"></i></span>
+
+                                                    <input type="number" class="qty-text" id="qty" step="1" min="1" max="12" name="quantity" value="1">
+
+                                                    <span class="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                                </div>
+                                                <button type="submit" name="addtocart" value="5" class="cart-submit">Sepete Ekle</button>
+                                                <input type="button" class="cart-submit MoreDetail" onclick="window.location.href='protuct_detail.html'" value="Daha Fazla" />
+                                                <!-- Wishlist -->
+
+                                            </form>
+
+                                            <div class="share_wf mt-30">
+                                                <p>Share With Friend</p>
+                                                <div class="_icon">
+                                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                                    <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pre-footer">
+                <div class="container">
+                    <div class="row">
+                        <!-- BEGIN BOTTOM ABOUT BLOCK -->
+                        <div class="col-md-3 col-sm-6 pre-footer-col">
+                            <h2>About us</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam sit nonummy nibh euismod tincidunt ut laoreet dolore magna aliquarm erat sit volutpat. Nostrud exerci tation ullamcorper suscipit lobortis nisl aliquip  commodo consequat. </p>
+                            <p>Duis autem vel eum iriure dolor vulputate velit esse molestie at dolore.</p>
+                        </div>
+                        <!-- END BOTTOM ABOUT BLOCK -->
+                        <!-- BEGIN BOTTOM INFO BLOCK -->
+                        <div class="col-md-3 col-sm-6 pre-footer-col">
+                            <h2>Information</h2>
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-angle-right"></i> <a href="javascript:;">Delivery Information</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="javascript:;">Customer Service</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="javascript:;">Order Tracking</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="javascript:;">Shipping & Returns</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="contacts.html">Contact Us</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="javascript:;">Careers</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="javascript:;">Payment Methods</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 pre-footer-col">
+                            <h2 class="margin-bottom-0">Latest Tweets</h2>
+                        </div>
+                        <!-- END INFO BLOCK -->
+                        <!-- BEGIN TWITTER BLOCK -->
+                        <!-- END TWITTER BLOCK -->
+                        <!-- BEGIN BOTTOM CONTACTS -->
+                        <div class="col-md-3 col-sm-6 pre-footer-col">
+                            <h2>Our Contacts</h2>
+                            <address class="margin-bottom-40">
+                                35, Lorem Lis Street, Park Ave<br>
+                                California, US<br>
+                                Phone: 300 323 3456<br>
+                                Fax: 300 323 1456<br>
+                                Email: <a href="mailto:info@metronic.com">info@metronic.com</a><br>
+                                Skype: <a href="skype:metronic">metronic</a>
+                            </address>
+                        </div>
+                        <ul class="social-icons">
+                            <li><a class="rss" data-original-title="rss" href="javascript:;"></a></li>
+                            <li><a class="facebook" data-original-title="facebook" href="javascript:;"></a></li>
+                            <li><a class="twitter" data-original-title="twitter" href="javascript:;"></a></li>
+                            <li><a class="googleplus" data-original-title="googleplus" href="javascript:;"></a></li>
+                            <li><a class="linkedin" data-original-title="linkedin" href="javascript:;"></a></li>
+                            <li><a class="youtube" data-original-title="youtube" href="javascript:;"></a></li>
+                            <li><a class="vimeo" data-original-title="vimeo" href="javascript:;"></a></li>
+                            <li><a class="skype" data-original-title="skype" href="javascript:;"></a></li>
+                        </ul>
+
+                    </div>
+                    <!-- END BOTTOM CONTACTS -->
+                </div>
+                <!-- BEGIN SOCIAL ICONS -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /.wrapper end -->
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <script src="js/jquery/jquery-2.2.min.js"></script>
+    <!-- Popper js -->
+    <!-- Bootstrap js -->
+    <!-- Plugins js -->
+    <script src="js/plugins1.js"></script>
+    <!-- Active js -->
+    <script src="js/active1.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.js'></script>
+    <script type="text/javascript">
+        setTimeout(function () {
+            document.getElementById("checkAllCat").click();
+        }, 1000);
+
+    </script>
+    <!-- Active js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/categories_custom.js"></script>
+
+    <!--Foto Zoom-->
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
+    <script src='js/jquery.zoom.min.js' type="text/javascript"></script><!-- product zoom -->
+    <script src="js/layout.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            Layout.init();
+            Layout.initOWL();
+            Layout.initTwitter();
+            Layout.initImageZoom();
+            Layout.initTouchspin();
+            Layout.initUniform();
+        });
+        function fotOpen(srcm, cs) {
+
+            var a = "data-BigImgsrc";
+            var zomFoto = document.getElementsByClassName("zoomImg")[0];
+            var rootFoto = document.getElementById("imgOpen");
+            var activeFoto = document.getElementsByClassName("ActiveFoto");
+            zomFoto.setAttribute("src", srcm);
+            rootFoto.setAttribute("src", srcm);
+
+            for (var i = 0; i < activeFoto.length; i++) {
+                if (i+1 == cs) {
+                    activeFoto[i].setAttribute("class", "ActiveFoto active");
+                } else {
+                    activeFoto[i].setAttribute("class", "ActiveFoto");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
